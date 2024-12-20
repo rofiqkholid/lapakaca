@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'MiSansLatin';
+    src: url('../asset/font/MiSansLatin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'MiSansLatin';
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+}
+
+.dashboard-container .menu {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2a3a4f;
+    color: #fff;
+    padding: 20px;
+}
+
+.dashboard-container .main-content {
+    margin: 30px;
+}
+
+.dashboard-container .main-content .card {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dashboard-container .main-content a {
+    background-color: #2a3a4f;
+    padding: 20px;
+    margin: 10px 10px;
+    color: #fff;
+    width: 40%;
+    height: 20vh;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.t-barang-main-content {
+    margin: 20px 0 20px 30px;
+
+}
+
+.t-barang-main-content .input-barang {
+    display: flex;
+}
+
+.t-barang-main-content .input-barang input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.nama-harga-gambar {
+    display: flex;
+    flex-direction: column;
+}
+
+.spesifikasi {
+    display: flex;
+    flex-direction: column;
+}

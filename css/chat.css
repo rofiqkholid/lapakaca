@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #bababa;
+    margin-top: 30px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-container h2 {
+    color: #2a3a4f;
+    border-left: 2px solid #2a3a4f;
+    padding: 5px;
+    font-size: 14pt;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.sidebar {
+    margin: 0 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 85vh;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .user-list {
+    padding: 0 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 11pt;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f4f4f4;
+    color: #000;
+
+}
+
+.chat-container {
+    margin-right: 20px;
+    width: 100%;
+    max-width: 1200px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #2a3a4f;
+    padding: 15px;
+    color: white;
+    border-radius: 3px 3px 0 0;
+}
+
+.header-title {
+    font-size: 18px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #f7f7f7;
+}
+
+.chat-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.chat-message.user .message-content {
+    background-color: #2a3a4f;
+    color: #fff;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.chat-message.admin .message-content {
+    background-color: #fff;
+    color: #000;
+    margin: 0 0 0 10px;
+    border: 1px solid #bababa;
+}
+
+.message-content {
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 35%;
+    word-wrap: break-word;
+    font-size: 11pt;
+}
+
+.chat-footer {
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+}
+
+.chat-footer input {
+    margin: 0 0 0 20px;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    outline: none;
+}
+
+.chat-footer button {
+    background-color: #2a3a4f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 0 0 20px;
+}
